@@ -45,6 +45,14 @@ html {
   font-size: 16px;
 }
 
+@media (min-width: 925px) {
+
+  html {
+    font-size: 18px;
+  }
+
+}
+
 
 body {
   line-height: 1.4;
@@ -95,15 +103,15 @@ strong > em {
 }
 
 .fz-twoUp {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .fz-fourUp {
-  font-size: 39px;
+  font-size: 2.4375rem;
 }
 
 .fz-threeUp {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .lh-oneDown {
@@ -184,43 +192,43 @@ main {
 }
 
 .TopSpacer {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .TopSpacer.twodown {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .TopSpacer.threeDown {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .TopSpacer.down {
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 
 .TopSpacer.defaultDown {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .TopSpacer.twoDown {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .TopSpacer.oneUp {
-  margin-top: 41px;
+  margin-top: 2.5625rem;
 }
 
 .TopSpacer.up {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .TopSpacer.twoUp {
-  margin-top: 61px;
+  margin-top: 3.8125rem;
 }
 
 .TopSpacer.threeUp {
-  margin-top: 95px;
+  margin-top: 5.9375rem;
 }
 
 button,
@@ -634,7 +642,7 @@ a.ArticleLink {
 
 .ArticleLink-container {
   border-radius: 4px;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .ArticleLink.ArticleLink--blue .ArticleLink-container {
@@ -652,7 +660,6 @@ a.ArticleLink {
 
 .ArticleLink.ArticleLink--red .ArticleLink-readPost,
 .ArticleLink.ArticleLink--red .ArticleLink-title {
-  /* color: #a22048; */
   color: #630c2e;
 }
 
@@ -670,133 +677,9 @@ a.ArticleLink {
 }
 
 .ArticleLink-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: 'DINNextLTPro-Regular', Arial, sans-serif;
 }
-
-
-/* Sponsored Job Flow Styles */
-
-.SponsoredJobFlow .SponsoredJobFlow-createSponsoredJob {
-  margin-left: 0;
-  -webkit-transition: margin-left 180ms ease-in-out;
-  -o-transition: margin-left 180ms ease-in-out;
-  transition: margin-left 180ms ease-in-out;
-}
-
-.SponsoredJobFlow.isPurchase .SponsoredJobFlow-createSponsoredJob {
-  margin-left: -100%;
-  -webkit-transition: margin-left 180ms ease-in-out;
-  -o-transition: margin-left 180ms ease-in-out;
-  transition: margin-left 180ms ease-in-out;
-}
-
-.SponsoredJobFlow-steps {
-  padding-left: 16px;
-  padding-right: 16px;
-
-  position: relative;
-}
-
-.SponsoredJobFlow-steps::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #D8D8D8;
-
-  position: absolute;
-  top: 12px;
-  left: 0;
-}
-
-.SponsoredJobFlow-steps::after {
-  content: " ";
-
-  display: block;
-
-}
-
-.SponsoredJobFlow-step {
-  position: relative; /* To get it to display above the line. */
-}
-
-.SponsoredJobFlow-stepBubble {
-
-  width: 25px;
-  height: 25px;
-
-  background-color: #D8D8D8;
-  border: 5px solid #fff;
-
-  border-radius: 50%;
-
-  margin: 0 auto;
-}
-
-/* For the seasoned pro payment page. */
-.SponsoredJobFlow-stepBubble.SponsoredJobFlow-stepBubble--seasonedPro {
-  border: 5px solid #141029
-}
-
-.SponsoredJobFlow-stepBubbleText {
-  color: #D8D8D8;
-  text-align: center;
-
-  font-weight: 600;
-  font-family: 'NHaasGroteskTXPro-75Bd', "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-}
-
-/* Variations */
-
-/* Current */
-.SponsoredJobFlow-step.current .SponsoredJobFlow-stepBubble {
-  background: -webkit-gradient(linear, left top, right top, from(#3ec7e0), to(#526bf4));
-  background: -webkit-linear-gradient(left, #3ec7e0, #526bf4);
-  background: -o-linear-gradient(left, #3ec7e0, #526bf4);
-  background: linear-gradient(to right, #3ec7e0, #526bf4);
-}
-
-.SponsoredJobFlow-step.current .SponsoredJobFlow-stepBubbleText {
-  color: #000;
-}
-
-/* Complete */
-.SponsoredJobFlow-step.complete .SponsoredJobFlow-stepBubble {
-  position: relative;
-  background: none;
-  background-color: #3ED45E;
-}
-
-/* Complete Checkmark */
-.SponsoredJobFlow-step.complete .SponsoredJobFlow-stepBubble::after {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 6px;
-  border: solid #1d6d2e;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: absolute;
-  left: 6px;
-  top: 4px;
-}
-
-.SponsoredJobFlow-step.complete .SponsoredJobFlow-stepBubbleText {
-  color: #3ED45E;
-}
-
-.SponsoredJobFlow-inputHelpText {
-
-  display: inline-block;
-  padding-left: 10px;
-  color: grey;
-  font-size: 12px;
-}
-
 
 /* PREVIEW */
 
