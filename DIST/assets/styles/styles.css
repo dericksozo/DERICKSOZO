@@ -185,6 +185,17 @@ main {
   background-color: #ef5553;
 }
 
+/* Chain images */
+
+img.chains {
+  width: 50%;
+  margin-bottom: -10px;
+
+  display: block;
+
+  margin: 0 auto;
+}
+
 /* ICONS */
 
 .medium-icon {
